@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
   AiFillTwitterCircle,
@@ -22,16 +23,16 @@ export default function Home() {
         <section className='min-h-screen'>
             <nav className="py-10 mb-12 flex flex-wrap justify-between mx-auto max-w-3xl">
               <h1 className="text-xl font-burtons">Varun Manjunath</h1>
-              <a href="/#about" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer ">About me</a>
-              <a href="/#projects" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Projects</a>
-              <a href="/varun-resume.pdf" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Resume</a>
+              <Link href="/#about" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer ">About me</Link>
+              <Link href="/#projects" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Projects</Link>
+              <Link href="/varun-resume.pdf" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Resume</Link>
             </nav>
             <div id="about">
               <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
                 <h3 className="text-5xl"> Introduction </h3>
                 <br/>
                 <p className="text-2xl text-gray-600">
-                  I am Varun Manjunath a 2nd year Computer Science Master's Student at 
+                  I am Varun Manjunath a 2nd year Computer Science Master&apos;s Student at 
                   The University of Colorado,Boulder.My areas of interest include Machine Learning as well as Full Stack Web Development.
                   In addition to that I enjoy playing Table Tennis and Badminton.
                 </p>
@@ -47,7 +48,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative mx-auto transition ease-in-out hover:scale-110 my-8 flex justify-center">
-                <Image src={deved} width={600} />
+                <Image src={deved} width={600} alt="Varun" />
               </div>
               <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
                 <h3 className="text-5xl">Skills</h3>
@@ -74,10 +75,10 @@ export default function Home() {
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Brewery React App</h5>
                   <p className="font-normal text-gray-700 dark:text-gray-400">A brewery react app that implements search functionality. The user can search the breweries based on the location, address, state,city and number</p>
                 </div>
-                <a href="https://github.com/varunmanju/brewery-react-app" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</a>
+                <Link href="https://github.com/varunmanju/brewery-react-app" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
               </div>
               <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
-                <Image className="rounded-lg" src={brewery} />
+                <Image className="rounded-lg" src={brewery} alt={"project screenshot"} />
               </div>
            </div>
             
