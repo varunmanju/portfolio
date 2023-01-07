@@ -48,7 +48,7 @@ export default function Home() {
               Experience
             </Link>
             <Link
-              href="/varun-resume.pdf"
+              href="/varun-job-final.pdf"
               className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
             >
               Resume
