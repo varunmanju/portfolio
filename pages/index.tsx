@@ -27,32 +27,36 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex flex-wrap justify-between mx-auto max-w-3xl">
-            <h1 className="text-xl font-burtons">Varun Manjunath</h1>
-            <Link
-              href="/#about"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer "
-            >
-              About me
-            </Link>
-            <Link
-              href="/#projects"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/#experience"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
-            >
-              Experience
-            </Link>
-            <Link
-              href="/varun-job-final.pdf"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
-            >
-              Resume
-            </Link>
+          <nav className="py-10 mb-12 flex flex-wrap justify-between mx-auto max-w-3xl sm:flex-col lg:flex-row">
+            <span className="flex justify-center w-full md:w-auto">
+              <h1 className="text-xl font-burtons">Varun Manjunath</h1>
+            </span>
+            <div className="flex flex-wrap">
+              <Link
+                href="/#about"
+                className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer mb-2"
+              >
+                About me
+              </Link>
+              <Link
+                href="/#projects"
+                className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer mb-2"
+              >
+                Projects
+              </Link>
+              <Link
+                href="/#experience"
+                className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer mb-2"
+              >
+                Experience
+              </Link>
+              <Link
+                href="/varun-resumes.pdf"
+                className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer mb-2"
+              >
+                Resume
+              </Link>
+            </div>
           </nav>
           <div id="about">
             <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
@@ -91,32 +95,32 @@ export default function Home() {
             <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
               <h3 className="text-5xl">Skills</h3>
               <br />
-              <div className="grid grid-cols-3 gap-4 grid-wrap">
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer">
+              <div className="flex flex-wrap max-w-2xl">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer mb-2">
                   Kubernetes
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer mb-2">
                   Docker
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Ansible
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Machine Learning
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Deep Learning
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   React
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Flask
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Python
                 </div>
-                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer ">
+                <div className="px-4 py-2 rounded-full ml-8 border-2 border-indigo-600 cursor-pointer  mb-2">
                   Java
                 </div>
               </div>
@@ -128,7 +132,10 @@ export default function Home() {
             className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl"
           >
             <h3 className="text-5xl">Projects</h3>
-            <div className="grid grid-cols-2 grid-wrap my-8 relative gap-14">
+            <div>
+
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-wrap my-8 relative gap-14">
               <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
                 <div>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
