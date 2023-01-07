@@ -31,25 +31,25 @@ export default function Home() {
             <h1 className="text-xl font-burtons">Varun Manjunath</h1>
             <Link
               href="/#about"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer "
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer "
             >
               About me
             </Link>
             <Link
               href="/#projects"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
             >
               Projects
             </Link>
             <Link
               href="/#experience"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
             >
               Experience
             </Link>
             <Link
               href="/varun-job-final.pdf"
-              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
             >
               Resume
             </Link>
