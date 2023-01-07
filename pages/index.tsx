@@ -372,7 +372,7 @@ export default function Home() {
                       levels. Each level of difficulty has points associated
                       with it with Hard being the most points followed by Medium
                       and then Easy. On average, the users of this industry got
-                      66& of the total questions correct.
+                      66% of the total questions correct.
                     </li>
                     <li className="my-1 text-left">
                       Built a Chatbot application to deliver information about
