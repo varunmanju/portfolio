@@ -1,18 +1,21 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import Head from "next/head";
+import Link from "next/link";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
   AiFillGithub,
-} from "react-icons/ai";  
+} from "react-icons/ai";
 import Image from "next/image";
-import deved from '../public/varunfly.jpeg';
-import brewery from '../public/breweries.png';
-import traintest from '../public/traintest.png';
-import fnms from '../public/FNMSSTORE.png';
+import deved from "../public/varunfly.jpeg";
+import brewery from "../public/breweries.png";
+import traintest from "../public/traintest.png";
+import fnms from "../public/FNMSSTORE.png";
 import qipath from "../public/Qipath.jpeg";
+import arista from "../public/arista.jpeg";
+import vmware from "../public/vmware.jpeg";
+import mind from "../public/mind.jpeg";
 export default function Home() {
   return (
     <div>
@@ -23,134 +26,366 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-white px-10">
-        <section className='min-h-screen'>
-            <nav className="py-10 mb-12 flex flex-wrap justify-between mx-auto max-w-3xl">
-              <h1 className="text-xl font-burtons">Varun Manjunath</h1>
-              <Link href="/#about" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer ">About me</Link>
-              <Link href="/#projects" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Projects</Link>
-              <Link href="/#experience" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Experience</Link>
-              <Link href="/varun-resume.pdf" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Resume</Link>
-            </nav>
-            <div id="about">
-              <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
-                <h3 className="text-5xl"> Introduction </h3>
-                <br/>
-                <p className="text-2xl text-gray-600">
-                  I am Varun Manjunath a 2nd year Computer Science Master&apos;s Student at 
-                  The University of Colorado,Boulder. 
-                  My areas of interest include Machine Learning as well as Full Stack Web Development.
-                  In addition to that I enjoy playing Table Tennis and Badminton.
-                </p>
-              </div>
-              <div className="text-3xl flex justify-center gap-10 py-3 text-gray-600">
-                <div>
-                  <div>Linkedin</div>
-                  <div className="ml-9 relative"> <a href="https://www.linkedin.com/in/varun-manjunath1/"><AiFillLinkedin/></a></div>
+        <section className="min-h-screen">
+          <nav className="py-10 mb-12 flex flex-wrap justify-between mx-auto max-w-3xl">
+            <h1 className="text-xl font-burtons">Varun Manjunath</h1>
+            <Link
+              href="/#about"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer "
+            >
+              About me
+            </Link>
+            <Link
+              href="/#projects"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+            >
+              Projects
+            </Link>
+            <Link
+              href="/#experience"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+            >
+              Experience
+            </Link>
+            <Link
+              href="/varun-resume.pdf"
+              className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+            >
+              Resume
+            </Link>
+          </nav>
+          <div id="about">
+            <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
+              <h3 className="text-5xl"> Introduction </h3>
+              <br />
+              <p className="text-2xl text-gray-600">
+                I am Varun Manjunath a 2nd year Computer Science Master&apos;s
+                Student at The University of Colorado,Boulder. My areas of
+                interest include Machine Learning as well as Full Stack Web
+                Development. In addition to that I enjoy playing Table Tennis
+                and Badminton.
+              </p>
+            </div>
+            <div className="text-3xl flex justify-center gap-10 py-3 text-gray-600">
+              <div>
+                <div>Linkedin</div>
+                <div className="ml-9 relative">
+                  {" "}
+                  <a href="https://www.linkedin.com/in/varun-manjunath1/">
+                    <AiFillLinkedin />
+                  </a>
                 </div>
-                <div>
-                  <div>Github</div>
-                  <div className="ml-6 relative"><a href="https://github.com/varunmanju"><AiFillGithub/></a></div>
-                </div>
               </div>
-              <div className="relative mx-auto transition ease-in-out hover:scale-110 my-8 flex justify-center">
-                <Image src={deved} width={600} alt="Varun" />
-              </div>
-              <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
-                <h3 className="text-5xl">Skills</h3>
-                <br/>
-                <div className="grid grid-cols-3 gap-4 grid-wrap">
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Kubernetes</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Docker</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Ansible</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Machine Learning</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Deep Learning</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">React</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Flask</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Python</div>
-                  <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">Java</div>
+              <div>
+                <div>Github</div>
+                <div className="ml-6 relative">
+                  <a href="https://github.com/varunmanju">
+                    <AiFillGithub />
+                  </a>
                 </div>
               </div>
             </div>
-          
-          <div id="projects" className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
+            <div className="relative mx-auto transition ease-in-out hover:scale-110 my-8 flex justify-center">
+              <Image src={deved} width={600} alt="Varun" />
+            </div>
+            <div className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
+              <h3 className="text-5xl">Skills</h3>
+              <br />
+              <div className="grid grid-cols-3 gap-4 grid-wrap">
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Kubernetes
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Docker
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Ansible
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Machine Learning
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Deep Learning
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  React
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Flask
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Python
+                </div>
+                <div className="px-4 py-2 rounded-md ml-8 border-2 border-indigo-600 cursor-pointer ">
+                  Java
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="projects"
+            className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl"
+          >
             <h3 className="text-5xl">Projects</h3>
             <div className="grid grid-cols-2 grid-wrap my-8 relative gap-14">
-              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
                 <div>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Brewery React App</h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">A brewery react app that implements search functionality. The user can search the breweries based on the location, address, state,city and number</p>
-                </div>
-                <Link href="https://github.com/varunmanju/brewery-react-app" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
-              </div>
-              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
-                <Image className="rounded-lg" src={brewery} alt={"project screenshot"} />
-              </div>
-              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <div>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Viz-Wiz Visual Question Answering System</h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400 mb-4">
-                    Designed a Viz-Wiz Visual Question Answering system that takes an image and question as input and outputs the
-                    answer to the question.
-                    The question is related to the content present in the image.
-                    The model utilizes a combination of Resnet50 for image feature extraction and a bidirectional LSTM for question
-                    encoding.
-                    Achieved an accuracy of 44.2 percent on the validation set
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    Brewery React App
+                  </h5>
+                  <p className="font-normal text-gray-700">
+                    A brewery react app that implements search functionality.
+                    The user can search the breweries based on the location,
+                    address, state,city and number
                   </p>
                 </div>
-                
-                <Link href="https://github.com/varunmanju/VIzWiz" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
+                <Link
+                  href="https://github.com/varunmanju/brewery-react-app"
+                  className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+                >
+                  Project
+                </Link>
               </div>
               <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
-                <Image className="rounded-lg" src={traintest} alt={"project screenshot"} />
+                <Image
+                  className="rounded-lg"
+                  src={brewery}
+                  alt={"project screenshot"}
+                />
               </div>
-              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
                 <div>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Music Store Simulation</h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400 mb-4">
-                    Utilized Object Oriended Design Patterns in order to build a simulation of a music store.
-                    The user will be able to choose how many days the simulation will be ran for. 
-                    As the simulation is running, announcements of all actions that occurs during each day will be printed to the terminal.
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    Viz-Wiz Visual Question Answering System
+                  </h5>
+                  <p className="font-normal text-gray-700 mb-4">
+                    Designed a Viz-Wiz Visual Question Answering system that
+                    takes an image and question as input and outputs the answer
+                    to the question. The question is related to the content
+                    present in the image. The model utilizes a combination of
+                    Resnet50 for image feature extraction and a bidirectional
+                    LSTM for question encoding. Achieved an accuracy of 44.2
+                    percent on the validation set
                   </p>
                 </div>
-                
-                <Link href="https://github.com/varunmanju/OOAD-FInal-project" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
-              </div>
-              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
-                <Image className="rounded-lg" src={fnms} alt={"project screenshot"} />
-              </div>
 
-           </div>
-            
-          </div>
-          <div id="experience" className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
-            <h3 className="text-5xl">Experience</h3>
-            <ol className="relative border-l border-gray-200 dark:border-gray-700 my-8">                  
-              <li className="mb-10 ml-6">            
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                    <Image className="rounded-lg" src={qipath} alt={"project screenshot"} />
-                  </span>
-                  <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">QI Path</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2021 -- Present</time>
-                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Working on migrating the front end from PHP to Angular for the QI PATH system that is used to find, 
-                    prioritize and address vulnerabilities in any project.
+                <Link
+                  href="https://github.com/varunmanju/VIzWiz"
+                  className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+                >
+                  Project
+                </Link>
+              </div>
+              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
+                <Image
+                  className="rounded-lg"
+                  src={traintest}
+                  alt={"project screenshot"}
+                />
+              </div>
+              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 ">
+                <div>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    Music Store Simulation
+                  </h5>
+                  <p className="font-normal text-gray-700 mb-4">
+                    Utilized Object Oriended Design Patterns in order to build a
+                    simulation of a music store. The user will be able to choose
+                    how many days the simulation will be ran for. As the
+                    simulation is running, announcements of all actions that
+                    occurs during each day will be printed to the terminal.
                   </p>
+                </div>
+
+                <Link
+                  href="https://github.com/varunmanju/OOAD-FInal-project"
+                  className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer"
+                >
+                  Project
+                </Link>
+              </div>
+              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
+                <Image
+                  className="rounded-lg"
+                  src={fnms}
+                  alt={"project screenshot"}
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="experience"
+            className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl"
+          >
+            <h3 className="text-5xl">Experience</h3>
+            <ol className="relative border-l border-gray-200 my-8">
+              <li className="mb-10 ml-9">
+                <span className="absolute flex items-center justify-center w-16 h-16 -left-3">
+                  <Image
+                    className="rounded-lg mr-12 mb-4"
+                    src={qipath}
+                    alt={"project screenshot"}
+                  />
+                </span>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 ">
+                  QI Path -- Front End Developer
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+                  August 2021 -- Present
+                </time>
+                <p className="text-base font-normal text-gray-500 ">
+                  Working on migrating the front end from PHP to Angular for the
+                  QI PATH system that is used to find, prioritize and address
+                  vulnerabilities in any project.
+                </p>
               </li>
-              <li className="mb-10 ml-6">
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                      <svg aria-hidden="true" className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
-                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+              <li className="mb-10 ml-9">
+                <span className="absolute flex items-center justify-center w-16 h-16 -left-3 ">
+                  <Image
+                    className="rounded-lg mr-12 mb-4"
+                    src={arista}
+                    alt={"project screenshot"}
+                  />
+                </span>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 relative mt-2">
+                  Arista Networks -- Software Engineering intern
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+                  June 2022 -- August 2022
+                </time>
+                <p className="text-base font-normal text-gray-500">
+                  <ul className="marker:text-green list-outside list-disc ml-9">
+                    <li className="my-2 text-left">
+                      Learned about the Code Base which revolves around the
+                      concept of creating an Agent. There is a centralized
+                      database called Sysdb which the Agents connect to in order
+                      to exchange information. Agents are reactive in nature,
+                      which means that when an input state changes an action is
+                      taken.
+                    </li>
+                    <li className="my-1 text-left">
+                      Unblocked the VTI, VNI policer CLI in Arfa so that
+                      Microsoft can configure it One. This was a requirement by
+                      Microsoft although the feature is not supported on the
+                      switch. Wrote unit tests to validate functionality
+                    </li>
+                    <li className="my-1 text-left">
+                      Worked on MLAG (Multi-Chassis Link Aggregation) switch
+                      where I had to Refactor code to sync only Flood List
+                      entries across MLAG switches. This was an optimization
+                      from the previous design that utilizes VcsSde to sync
+                      Flood List entries. VcsSde has many unnecessary fields
+                      that are not a part of the MLAG sync. Wrote Unit tests and
+                      Integration tests to validate functionality.
+                    </li>
+                  </ul>
+                </p>
               </li>
-              <li className="ml-6">
-                  <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                      <svg aria-hidden="true" className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-                  </span>
-                  <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
-                  <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
-                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+              <li className="mb-10 ml-9">
+                <span className="absolute flex items-center justify-center w-16 h-16 -left-3 ">
+                  <Image
+                    className="rounded-lg mr-12 mb-4"
+                    src={vmware}
+                    alt={"project screenshot"}
+                  />
+                </span>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 relative mt-2">
+                  VMware -- Applications Administrator
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+                  August 2020 -- August 2021
+                </time>
+                <p className="text-base font-normal text-gray-500">
+                  Responsible for deploying and maintaining applications on
+                  platforms like PCF(Pivotal Cloud Foundry) and TKG(Tanzu
+                  Kubernetes Grid). Also maintain and troubleshoot Harbor, an
+                  application that is a repository for Docker images
+                </p>
+              </li>
+              <li className="mb-10 ml-9">
+                <span className="absolute flex items-center justify-center w-16 h-16 -left-3 ">
+                  <Image
+                    className="rounded-lg mr-12 mb-4"
+                    src={vmware}
+                    alt={"project screenshot"}
+                  />
+                </span>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 relative mt-2">
+                  VMware:Contract -- Data Science Intern
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+                  Feb 2020 -- May 2020
+                </time>
+                <p className="text-base font-normal text-gray-500">
+                  <ul className="marker:text-green list-outside list-disc ml-9">
+                    <li className="my-2 text-left">
+                      Developed a Context-Based Recommender System that provides
+                      persona-based content to VMware employees on the Intranet
+                      based on the Employee’s function, role, location, and
+                      interests.
+                    </li>
+                    <li className="my-1 text-left">
+                      Around 15GB of data was pulled from the VMware data center
+                      (Santa Clara Datacenter) and stored locally.
+                    </li>
+                    <li className="my-1 text-left">
+                      For every user, a set of 10 articles were recommended by
+                      taking a combination of Collaborative and Content-Based
+                      filtering in Recommender systems.
+                    </li>
+                    <li className="my-1 text-left">
+                      The Recommender system achieved a personalization score of
+                      0.744 which is pretty high. The personalization score
+                      measures how customized the recommendations are for a set
+                      of users.
+                    </li>
+                  </ul>
+                </p>
+              </li>
+              <li className="mb-10 ml-9">
+                <span className="absolute flex items-center justify-center w-16 h-16 -left-3 ">
+                  <Image
+                    className="rounded-lg mr-12 mb-4"
+                    src={mind}
+                    alt={"project screenshot"}
+                  />
+                </span>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 relative mt-2">
+                  MindStix Software Labs -- Data Science Intern
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 ">
+                  June 2018 -- July 2018
+                </time>
+                <p className="text-base font-normal text-gray-500">
+                  <ul className="marker:text-green list-outside list-disc ml-6">
+                    <li className="my-2 text-left">
+                      Built an Adaptive Learning & Collaboration Platform to
+                      provide requirement-based training to beauty advisors of
+                      the Estee Lauder cosmetic company. The platform varies the
+                      difficulty level of questions based on the answer that the
+                      user provides.
+                    </li>
+                    <li className="my-1 text-left">
+                      There were a total of 30 questions and these questions
+                      were equally categorized into Easy, Medium, and Hard
+                      levels. Each level of difficulty has points associated
+                      with it with Hard being the most points followed by Medium
+                      and then Easy. On average, the users of this industry got
+                      66& of the total questions correct.
+                    </li>
+                    <li className="my-1 text-left">
+                      Built a Chatbot application to deliver information about
+                      cosmetic products to Estee Lauder cosmetic company. The
+                      Chatbot utilized an open-source machine learning framework
+                      called Rasa NLU to train on intents and entities.
+                    </li>
+                    <li className="my-1 text-left">
+                      Around 200 question-answer pairs were collected from
+                      company employees and trained on the Rasa NLU framework.
+                    </li>
+                  </ul>
+                </p>
               </li>
             </ol>
           </div>
