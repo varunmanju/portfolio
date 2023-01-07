@@ -10,6 +10,9 @@ import {
 import Image from "next/image";
 import deved from '../public/varunfly.jpeg';
 import brewery from '../public/breweries.png';
+import traintest from '../public/traintest.png';
+import fnms from '../public/FNMSSTORE.png';
+import qipath from "../public/Qipath.jpeg";
 export default function Home() {
   return (
     <div>
@@ -25,6 +28,7 @@ export default function Home() {
               <h1 className="text-xl font-burtons">Varun Manjunath</h1>
               <Link href="/#about" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer ">About me</Link>
               <Link href="/#projects" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Projects</Link>
+              <Link href="/#experience" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Experience</Link>
               <Link href="/varun-resume.pdf" className="px-4 py-2 rounded-md ml-8 transition ease-in-out bg-green-500 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Resume</Link>
             </nav>
             <div id="about">
@@ -33,7 +37,8 @@ export default function Home() {
                 <br/>
                 <p className="text-2xl text-gray-600">
                   I am Varun Manjunath a 2nd year Computer Science Master&apos;s Student at 
-                  The University of Colorado,Boulder.My areas of interest include Machine Learning as well as Full Stack Web Development.
+                  The University of Colorado,Boulder. 
+                  My areas of interest include Machine Learning as well as Full Stack Web Development.
                   In addition to that I enjoy playing Table Tennis and Badminton.
                 </p>
               </div>
@@ -80,8 +85,74 @@ export default function Home() {
               <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
                 <Image className="rounded-lg" src={brewery} alt={"project screenshot"} />
               </div>
+              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Viz-Wiz Visual Question Answering System</h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400 mb-4">
+                    Designed a Viz-Wiz Visual Question Answering system that takes an image and question as input and outputs the
+                    answer to the question.
+                    The question is related to the content present in the image.
+                    The model utilizes a combination of Resnet50 for image feature extraction and a bidirectional LSTM for question
+                    encoding.
+                    Achieved an accuracy of 44.2 percent on the validation set
+                  </p>
+                </div>
+                
+                <Link href="https://github.com/varunmanju/VIzWiz" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
+              </div>
+              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
+                <Image className="rounded-lg" src={traintest} alt={"project screenshot"} />
+              </div>
+              <div className="flex flex-col justify-between max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Music Store Simulation</h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400 mb-4">
+                    Utilized Object Oriended Design Patterns in order to build a simulation of a music store.
+                    The user will be able to choose how many days the simulation will be ran for. 
+                    As the simulation is running, announcements of all actions that occurs during each day will be printed to the terminal.
+                  </p>
+                </div>
+                
+                <Link href="https://github.com/varunmanju/OOAD-FInal-project" className="px-4 py-2 rounded-md transition ease-in-out bg-indigo-600 duration-100 text-white hover:scale-110 hover:shadow-2xl shadow-sm cursor-pointer">Project</Link>
+              </div>
+              <div className="relative mx-auto max-w-sm transition ease-in-out hover:scale-110">
+                <Image className="rounded-lg" src={fnms} alt={"project screenshot"} />
+              </div>
+
            </div>
             
+          </div>
+          <div id="experience" className="text-center py-10 mb-12 justify-between mx-auto max-w-3xl">
+            <h3 className="text-5xl">Experience</h3>
+            <ol class="relative border-l border-gray-200 dark:border-gray-700 my-8">                  
+              <li class="mb-10 ml-6">            
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <Image className="rounded-lg" src={qipath} alt={"project screenshot"} />
+                  </span>
+                  <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">QI Path</h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2021 -- Present</time>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                    Working on migrating the front end from PHP to Angular for the QI PATH system that is used to find, 
+                    prioritize and address vulnerabilities in any project.
+                  </p>
+              </li>
+              <li class="mb-10 ml-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                      <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+              </li>
+              <li class="ml-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                      <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                  </span>
+                  <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+              </li>
+            </ol>
           </div>
         </section>
       </main>
